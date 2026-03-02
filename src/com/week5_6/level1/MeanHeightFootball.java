@@ -1,0 +1,24 @@
+package com.week5_6.level1;
+import java.util.Scanner;
+
+public class MeanHeightFootball {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        double[] heights = new double[11];
+        double sum = 0;
+
+        System.out.println("Enter heights of 11 players:");
+
+        for (int i = 0; i < heights.length; i++) {
+            heights[i] = input.nextDouble();
+            sum += heights[i];
+        }
+
+        double mean = sum / heights.length;
+
+        System.out.println("Mean Height = " + mean);
+
+        input.close();
+    }
+}
